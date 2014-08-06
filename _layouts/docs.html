@@ -1,0 +1,20 @@
+{% include head.html %}
+
+{% include nav.html %}
+
+{% include sub_header.html %}
+
+{% if page.side_menu == 'software' %}{% include sidemenu_software.html %}
+{% elsif page.side_menu == 'hardware'%}{% include sidemenu_hardware.html %}
+{% elsif page.side_menu == 'frontend'%}{% include sidemenu_frontend.html %}
+{% endif %}
+
+{{ content }}
+
+
+</div>
+</div>
+
+{% include base_scripts.html %}
+
+{% include foot.html %}
