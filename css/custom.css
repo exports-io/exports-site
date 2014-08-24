@@ -17,20 +17,44 @@
     border-radius: 0 !important;
 }
 
-.nav-link {
-    padding-top: 25px !important;
-    color: #d1d1d1 !important;
-    border-top: 3px solid transparent !important;
+.nav-container {
+    margin-top: 20px;
 }
 
-.nav-link:hover, .active {
-    color: white !important;
-    border-top: 3px solid !important;
-    border-top-color: #ffffff;
+.navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar-brand:hover {
+    color: #E99D1A;
+}
+
+.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: #E99D1A;
+}
+
+.btn-login {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    margin-left: 20px;
+    background-color: transparent;
+    border: white solid 1px;
+}
+
+.btn-login:hover {
+    color: #30426A;
+    background-color: white;
+    transition: all .5s;
+    border: white solid 1px;
 }
 
 .horizontal-gradient {
-    background: #5C8AC8;
+    background: #30426A;
 }
 
 /***********************
@@ -38,24 +62,41 @@
 ************************/
 
 .home-header {
-    padding-bottom: 20px;
+    padding-bottom: 150px;
     color: white;
     text-align: center;
 }
 
 .home-header h1 {
     padding-top: 20px;
-    text-shadow: #4d76af 4px 4px 0px;
+    text-shadow: #E99D1A 4px 4px 0px;
+}
+
+.home-header-row {
+    margin-top: 100px;
 }
 
 .home-button-row {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .btn-home {
     width: 220px;
+}
 
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    border: white solid 1px;
+}
+
+.btn-outline:hover {
+    color: #30426A;
+    background-color: white;
+    transition: all .5s;
+    border: white solid 1px;
 }
 
 .home-container {
@@ -235,15 +276,6 @@ aside-menu
 .left-menu.active-menu li {
     display: block;
 }
-
-/***********************
-***    Docs   ****
-************************/
-
-.aside-menu {
-    margin-top: 30px;
-}
-
 
 
 
