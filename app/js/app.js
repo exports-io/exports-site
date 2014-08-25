@@ -9,17 +9,24 @@ angular.module('myApp', [
   'myApp.controllers'
 ])
 
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 
     $stateProvider
       .state('home', {
         url: "/",
         templateUrl: "app/views/home.html"
+      })
+
+
+      .state('login', {
+        url: "/login",
+        templateUrl: "app/views/login.html"
       });
 
 
     $urlRouterProvider.otherwise("/");
+    //$locationProvider.html5Mode(true);
 
 
   });
