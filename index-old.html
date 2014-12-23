@@ -4,18 +4,18 @@
 	<meta charset="utf-8">
 	<base href="/">
 
-	<title>Exports.io</title>
+	<title>Exports</title>
 
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/flat-ui.css">
-	<link rel="stylesheet" href="css/new.css">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
 
+<div ng-include="'app/views/navbar.html'"></div>
 
 <div ui-view=""></div>
-<div id="particles-js"></div>
 
 <script type="text/javascript" src="lib/angular/angular.js"></script>
 <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -29,5 +29,8 @@
 <script type="text/javascript" src="app/js/filters.js"></script>
 <script type="text/javascript" src="app/js/services.js"></script>
 
+
 </body>
+<div ng-include="'app/views/footer.html'"></div>
+
 </html>
